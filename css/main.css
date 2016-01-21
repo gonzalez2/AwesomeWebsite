@@ -1,1 +1,38 @@
-Css stuff
+
+
+a{
+  text-decoration: none;
+}
+
+#logo {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #555;
+  background-color: #f1f1f1;
+
+}
+
+li {
+  display: inline;
+  border-bottom: 1px solid #555;
+  color: #000;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5px;
+}
