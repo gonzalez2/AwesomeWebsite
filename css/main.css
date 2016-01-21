@@ -1,10 +1,14 @@
+*{
+  list-style: none;
+  text-decoration: none;
+}
+
 #logo {
   text-align: center;
 }
 
 /* Styling the navigation links */
 nav ul {
-  list-style-type: none;
   margin-left: 10;
   padding: 0;
   overflow: hidden;
@@ -20,7 +24,6 @@ nav li:last-child {
 nav a {
     color: white;
     display: inline-block;
-    text-decoration: none;
     text-align: center;
     padding: 14px 16px;
     -webkit-transition: background-color .7s ease-out;
@@ -69,11 +72,11 @@ that does a similar effect. Will look for ways to improve */
 #swap img.no-wrap:hover {
     opacity: 1;
 }
-/* this doesn't work :(. will look into this later 
+/* this doesn't work :(. will look into this later
 #facebook {
    background-image: url('img/facebook.png');
 }
- 
+
 #facebook:hover {
     background-image: url('img/facebook-wrap.png');
 }
