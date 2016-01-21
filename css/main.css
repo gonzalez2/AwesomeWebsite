@@ -1,41 +1,85 @@
-
-
-a{
-  text-decoration: none;
-}
-
 #logo {
   text-align: center;
 }
-ul {
+
+/* Styling the navigation links */
+nav ul {
   list-style-type: none;
   margin-left: 10;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
-
-li {
+nav li {
   float: left;
   border-right: 1px solid #bbb;
 }
-
-li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-li:last-child {
+nav li:last-child {
   border-right: none;
+}
+nav a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    -webkit-transition: background-color .7s ease-out;
+    -moz-transition: background-color .7s ease-out;
+    -o-transition: background-color .7s ease-out;
+    transition: background-color .7s ease-out;      /* smooth transition of bg color */
+}
+nav a:hover, nav a:focus {
+    background-color: #111;
 }
 
 footer {
-  text-align: center;
-  padding-top: 5px;
+    text-align: center;
+    padding-top: 5px;
 }
+
+
+
+
+
+
+
+/* Styling social icons */
+.social-icon {
+    display: inline-block;
+}
+
+/* Adding transition to FB button */
+/* Twitter button has JS property embedded in html file
+that does a similar effect. Will look for ways to improve */
+#swap {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    margin: 0;
+    /*border: 5px solid red;*/
+}
+#swap img {
+    position:absolute;
+    margin: 0;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+}
+#swap img.no-wrap {
+    opacity: 0;
+}
+#swap img.no-wrap:hover {
+    opacity: 1;
+}
+/* this doesn't work :(. will look into this later 
+#facebook {
+   background-image: url('img/facebook.png');
+}
+ 
+#facebook:hover {
+    background-image: url('img/facebook-wrap.png');
+}
+*/
