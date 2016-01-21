@@ -2,23 +2,21 @@
   text-align: center;
 }
 
-ul {
+/* Styling the navigation links */
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
-
-li {
+nav li {
   float: left;
   border-right: 1px solid #bbb;
 }
-li:last-child {
+nav li:last-child {
   border-right: none;
 }
-
-/* Styling the navigation links */
 nav a {
     color: white;
     display: inline-block;
@@ -38,6 +36,12 @@ footer {
     text-align: center;
     padding-top: 5px;
 }
+
+
+
+
+
+
 
 /* Styling social icons */
 .social-icon {
