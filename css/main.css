@@ -4,46 +4,72 @@
 }
 
 *{
-  list-style: none;
-  text-decoration: none;
+    list-style: none;
+    text-decoration: none;
 }
 
-h1,body,ul{
-  margin: 0;
-  padding: 0;
+h1,body,ul,li{
+    margin: 0;
+    padding: 0;
 }
 
 #logo {
-  text-align: center;
+    text-align: center;
 }
 
 /* Styling the navigation links */
+nav {
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+}
 nav ul {
-  margin-left: 10;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+    width: 100%;
 }
 nav li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-nav li:last-child {
-  border-right: none;
+    float: left;
+    border-right: 1px solid #bbb;
+    position: relative;
 }
 nav a {
+    background-color: #333;
     color: white;
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 14px 16px;
-    -webkit-transition: background-color .7s ease-out;
-    -moz-transition: background-color .7s ease-out;
-    -o-transition: background-color .7s ease-out;
-    transition: background-color .7s ease-out;      /* smooth transition of bg color */
+    -webkit-transition: all .7s ease-out;
+       -moz-transition: all .7s ease-out;
+        -ms-transition: all .7s ease-out;
+         -o-transition: all .7s ease-out;
+            transition: all .7s ease-out;     
 }
 nav a:hover, nav a:focus {
     background-color: #111;
 }
+nav li ul {        /* dropdown menu transition */
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+nav li:hover ul, nav li:focus ul  {
+    opacity: 1;
+    visibility: visible;
+}
+nav li ul li {
+    float: none;
+    width: 100%;
+}
+nav li ul a:hover, nav li ul a:focus {
+    background-color: #111;
+}
+/* End of nav links */
+
 
 footer {
     text-align: center;
