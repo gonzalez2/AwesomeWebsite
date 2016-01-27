@@ -1,0 +1,23 @@
+body {
+    background-color: #333;
+}
+
+.jumbotron {
+    margin-top: 15px;
+    background-image: url(../img/cpp/effects/DSCN0911.jpg);
+    background-size: cover;
+}
+
+.jumbotron p {
+    color: white;
+    padding-left: 5%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 5px;
+}
+
+ul.nav li a:hover { 
+    background-color: #bbb; 
+}
