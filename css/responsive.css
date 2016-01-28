@@ -1,33 +1,47 @@
-@media screen and (min-width: 480px){
-
-    /***********************************
-        TWO COLUMN LAYOUT
-    ************************************/
+@media screen and (min-width: 100px){
 
 
-
-    /***********************************
-        PAGE: ABOUT
-    ************************************/
-
-
-
-      /***********************************
-        PAGE: ABOUT
-    ************************************/
-
-
+  #ModalButton {
+    margin-left:35%;
+    margin-top: 1%;
+  }
 
 }
 
+@media screen and (min-width: 480px){
+
+
+  #ModalButton {
+    margin-left:41%;
+    margin-top: 1%;
+  }
+
+}
+
+@media screen and (min-width: 560px){
+
+  #ModalButton {
+    margin-left:40%;
+    margin-top: 1%;
+  }
+
+}
 
   @media screen and (min-width: 660px){
 
-     /***********************************
-        HEADER
-    ************************************/
-
-
-
+      #ModalButton {
+        margin-left:42%;
+        margin-top: 1%;
+      }
 }
+
+@media only screen and (min-width: 768px) {
+
+  #ModalButton {
+    margin-left:23%;
+    margin-top: 3%;
+  }
+}
+
+
 

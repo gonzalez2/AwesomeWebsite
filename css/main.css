@@ -6,12 +6,14 @@
 *{
     list-style: none;
     text-decoration: none;
+
 }
 
 h1,body,ul,li{
     margin: 0;
     padding: 0;
 }
+
 
 #logo {
     text-align: center;
