@@ -8,9 +8,6 @@ Our goal is to create a website where CS majors can
 * Dynamical show classes available 
 * Display inforamtion on upcoming/current events(HackPoly etc.)
 
-### Version
-1.0.0
-
 ### Tech
 Open sources used so far:
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
