@@ -11,9 +11,11 @@ Our goal is to create a website where CS majors can
 ### Tech
 Open sources used so far:
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
+* [Jssor Slider] - Banner slider running with Bootstrap
 * [malsup] - Picture slider
 
 [//]: #  
    [malsup]:<http://jquery.malsup.com/cycle2/>
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   [Jssor Slider]: <http://jssor.com/>
    [jQuery]: <http://jquery.com>
