@@ -1,8 +1,42 @@
-/* for message center distinction :D */
-.nelly {
-    color: blue;
+body {
+    background-color: #333;
 }
 
+.jumbotron {
+    margin-top: 15px;
+    background-image: url(../img/cpp/effects/DSCN0911.jpg);
+    background-size: cover;
+}
+
+.jumbotron p {
+    color: white;
+    padding-left: 5%;
+}
+
+footer {
+    text-align: center;
+    padding-top: 5px;
+}
+
+ul.nav li a:hover {
+    background-color: #bbb;
+}
+
+
+.img-circle {
+  margin-right: 7px;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+/*
 *{
     list-style: none;
     text-decoration: none;
@@ -19,58 +53,6 @@ h1,body,ul,li{
     text-align: center;
 }
 
-/* Styling the navigation links */
-nav {
-    position: absolute;
-    background-color: #333;
-    width: 100%;
-}
-nav ul {
-    width: 100%;
-}
-nav li {
-    float: left;
-    border-right: 1px solid #bbb;
-    position: relative;
-}
-nav a {
-    background-color: #333;
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    -webkit-transition: all .7s ease-out;
-       -moz-transition: all .7s ease-out;
-        -ms-transition: all .7s ease-out;
-         -o-transition: all .7s ease-out;
-            transition: all .7s ease-out;
-}
-nav a:hover, nav a:focus {
-    background-color: #111;
-}
-nav li ul {        /* dropdown menu transition */
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1;
-    -webkit-transition: all .5s ease;
-       -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-         -o-transition: all .5s ease;
-            transition: all .5s ease;
-}
-nav li:hover ul, nav li:focus ul  {
-    opacity: 1;
-    visibility: visible;
-}
-nav li ul li {
-    float: none;
-    width: 100%;
-}
-nav li ul a:hover, nav li ul a:focus {
-    background-color: #111;
-}
-/* End of nav links */
 
 
 footer {
@@ -78,47 +60,8 @@ footer {
     padding-top: 5px;
 }
 
-
-/* Styling social icons */
-.social-icon {
-    display: inline-block;
-}
-
-/* Adding transition to FB button */
-/* Twitter button has JS property embedded in html file
-that does a similar effect. Will look for ways to improve */
-#swap {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    position: relative;
-    margin: 0;
-    /*border: 5px solid red;*/
-}
-#swap img {
-    position:absolute;
-    margin: 0;
-    opacity: 1;
-    -webkit-transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
-    transition: opacity .5s ease-out;
-}
-#swap img.no-wrap {
-    opacity: 0;
-}
-#swap img.no-wrap:hover {
-    opacity: 1;
-}
-/* this doesn't work :(. will look into this later
-#facebook {
-   background-image: url('img/facebook.png');
-}
-
-#facebook:hover {
-    background-image: url('img/facebook-wrap.png');
-}
 */
+
 
 #container {
   width: 100%;

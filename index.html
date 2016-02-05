@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>AwesomeWebsite|Computer Science</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800,600|Italiana' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/responsive.css">
-      <script src="//www.powr.io/powr.js" external-type="html"></script>
-      <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-      <script type="text/javascript" src="js/cycle2.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<head>
+    <title>AwesomeWebsite | Computer Science</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <!-- <script src="//www.powr.io/powr.js" external-type="html"></script> -->
+   <!-- <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script> -->
+</head>
+  
+<body>
     <header>
-      <a href="index.html" id="logo">
+        <div class="jumbotron">
+            <!-- add automatic slideshow here -->
+            
+            
+            <!--
+            <a href="index.html" id="logo">
         <div id="container">
           <div id="slideshow" class="cycle-slideshow"
                data-cycle-fx = "fade"
@@ -38,76 +43,67 @@
           <img id="next" src="img/next1.svg"/>
         </div>
       </a>
-
-<!--  navigation bar menu    -->
-      <nav>
-        <ul>
-          <li><a href="#">Classes</a></li>
-          <li><a href="../AwesomeWebsite/roadmap.html">CS Road Map</a>
-              <ul>
-                  <li><a href="#">First Year</a></li>
-                  <li><a href="#">Second Year</a></li>
-                  <li><a href="#">Third Year</a></li>
-                  <li><a href="#">Fourth Year</a></li>
-              </ul>
-          </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li style="float:right;"><a href="/help.html">Help</a></li>
-          <li style="float:right; border-left: 1px solid #bbb"><a href="http://www.cpp.edu">Cal Poly Pomona</a></li>
-
-        </ul>
-      </nav>
-<!--  end of navigation bar    -->
+           -->
+            
+            <p>Inspirational quote here...</p>
+        </div>
     </header>
-
-
-    <div id="wrapper">
-      <section>
-
-        <!-- Message Center :D -->
-<!--
-        <img src="http://i51.tinypic.com/314f9y0.jpg" style="position: absolute; right: 255px; bottom: 10px; z-index: 999;">
-        <div style="position:fixed; right:10px; bottom:10px; width:250px; height:200px; overflow:auto; font:13px trebuchet ms; text-align:left;">
-            <p class="nelly"> YAAAY! got the dropdown menu working but ughh =___= didn't imagine it was going to be this not-easy
-            <p class="nelly">Starting to learn Bootstrap! An excellent framework for developing web and mobile responsive sites!</p>
-            <p class="nelly"> YAAAY! got the dropdown menu working but ughh =___= didn't imagine it was going to be this not-easy
-            <img height="14" width="14" src="https://cdn1.iconfinder.com/data/icons/smiley-faces/100/Smiley_tired-128.png">
-            (position, floating, and overflow properties seem to have a mind of their own and dont wanna listen sometimes!) i need to get some warm coffee and cookies now</p>
-                <p>Glad you are having fun as so am in!=) And dont worry code away! Ill be making lots of updates aswell.</p>
-                <p>Im excited to see our progress as we go on! =D</p>
-            <p class="nelly">Hi Cesar!! <img src="https://textfac.es/static/ico/favicon.png" height="14" width="14">I'm having so much fun working with Git and writing simple code with css and html!
-            <br>Please excuse me if I'm constantly bombarding you with all these random code updates (or should I say, commits? muahaha)
-            <br>Looking forward to learn and build together :D. Thank you so much again for teaching me!
-            </p>
-            <img height="35%" width="50%" src="http://reactiongif.org/wp-content/uploads/GIF/2014/08/GIF-Amused-Conan-OBrien-fun-gratitude-happy-joy-pleased-satisfied-smile-thank-you-GIF.gif">
+    
+    <!-- Navigation menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- This adds the button when menu collapses -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../AwesomeWebsite/index.html">AwesomeWebsite</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li clas="active"><a href="#">Home</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Road Map</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">First Year</a></li>
+                            <li><a href="#">Second Year</a></li>
+                            <li><a href="#">Third Year</a></li>
+                            <li><a href="#">Fourth Year</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.cpp.edu">Cal Poly Pomona</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
         </div>
--->
-        <!-- End of Message Center -->
+    </nav>
+    
+    <div class="container">
+        <h2>Main Page</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem aspernatur corporis, eos. Officia debitis placeat dignissimos dolorem, esse itaque fugit repellendus, temporibus, blanditiis vitae reprehenderit inventore earum delectus voluptatibus totam.</p>
+     
+          <section>
+              <div id="instagram" style="position:fixed; right:-0px; bottom:10px; width:450px; height:350px; overflow:auto; font:13px trebuchet ms;">
+              <div class="powr-instagram-feed" id="7497d7a2_1454629120999"></div>
+            </div>
+          </section>
+          <div style="clear: both;"></div>
 
-      </section>
-      <section>
-          <div id="instagram" style="position:fixed; right:-0px; bottom:10px; width:450px; height:350px; overflow:auto; font:13px trebuchet ms;">
-          <div class="powr-instagram-feed" id="7497d7a2_1454629120999"></div>
-        </div>
-      </section>
-      <div style="clear: both;"></div>
+      
     </div>
-     <div>
-      <footer>
-        <div>
-
-        </div>
+     
+    <footer>
         <a href="http://www.twitter.com"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon" id="twitter" onmouseover="this.src='img/twitter.png'" onmouseout="this.src='img/twitter-wrap.png'"></a>
-        <!--   <a href="http://www.facebook.com"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon" id="facebook"></a>  -->
-        <a href="http://www.facebook.com"> <!-- second alternative -->
-          <div id="swap">
-            <img class="wrap" src="img/facebook-wrap.png">
-            <img class="no-wrap" src="img/facebook2.png">
-          </div>
-        </a>
+        <a href="http://www.facebook.com"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon" id="facebook" onmouseover="this.src='img/facebook.png'" onmouseout="this.src='img/facebook-wrap.png'"></a>         
         <p>&copy; 2016</p>
-      </footer>
-      </div>
-  </body>
+    </footer>
+            
+</body>
+  
 </html>
