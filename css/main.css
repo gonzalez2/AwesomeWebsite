@@ -2,12 +2,6 @@ body {
     background-color: #333;
 }
 
-.jumbotron {
-    margin-top: 15px;
-    background-image: url(../img/cpp/effects/DSCN0911.jpg);
-    background-size: cover;
-}
-
 .jumbotron p {
     color: white;
     padding-left: 5%;
@@ -22,6 +16,17 @@ ul.nav li a:hover {
     background-color: #bbb;
 }
 
+#slider_container {
+    visibility: hidden; 
+    position: relative; 
+    margin: 0 auto; 
+    width: 980px; 
+    height: 380px; 
+    overflow: hidden;
+}
+
+
+
 
 .img-circle {
   margin-right: 7px;
@@ -32,35 +37,6 @@ ul.nav li a:hover {
 
 
 
-
-
-
-
-/*
-*{
-    list-style: none;
-    text-decoration: none;
-
-}
-
-h1,body,ul,li{
-    margin: 0;
-    padding: 0;
-}
-
-
-#logo {
-    text-align: center;
-}
-
-
-
-footer {
-    text-align: center;
-    padding-top: 5px;
-}
-
-*/
 
 
 #container {
