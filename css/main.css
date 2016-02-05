@@ -171,3 +171,23 @@ that does a similar effect. Will look for ways to improve */
   z-index:100;
 }
 
+footer{
+  clear: both;
+}
+
+#left h2{
+  margin-top: 85px;
+  text-align: right;
+  margin-right: 120px;
+}
+
+.powr-instagram-feed {
+  clear: both;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 500px;
+  height: 100%;
+  float: right;
+}
+
+
