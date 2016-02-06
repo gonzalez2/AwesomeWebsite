@@ -51,6 +51,7 @@
       };
       $scope.myData.on('value', function(snapshot){
         $scope.students = snapshot.val();
+        $scope.$apply();
       });
 
     };
