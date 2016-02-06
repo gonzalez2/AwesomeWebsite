@@ -13,11 +13,16 @@
 <body style="margin:20px" >
  <div>
    <label>Student</label>
+
+<!--ng-model will try to bind to the property given by evaluating the expression o the current scope.
+  If the property doesnt already exist o this scope, it will be created implicitly and added to the scope
+  Hers the link if you want more reading.
+  https://docs.angularjs.org/api/ng/directive/ngModel   -->
    <input type="text" id="student" ng-model="student"><br />
    <label>Class</label>
    <input type="text" id="class" ng-model="class"><br />
  </div>
-
+  <!--The ngClick directive allows you to specify custom behavior when an element is clicked.-->
   <div><button class="btn btn-default" ng-click="saveClasses()">Save <span class="glyphicon glyphicon-ok"></span></button></div>
 
  <div>
@@ -27,6 +32,8 @@
        <th>Student Name</th>
        <th>Classes</th>
      </thead>
+<!-- ng-repeat is an Angular class thats similar to a advance forloop. It stores
+     info in studentInfo and diplays it by calling for the info in the database-->
      <tbody ng-repeat="studentInfo in students">
        <tr>
          <td>{{studentInfo.student}}</td>
@@ -37,21 +44,31 @@
  </div>
 
   <script>
-    function studentCtrl($scope){
+    //The controller function
+    function studentCtrl($scope,$timeout){
+      //Links to database and named it myData
       $scope.myData = new Firebase("https://calpolycs.firebaseio.com/Students");
-      $scope.student = "";
-      $scope.class="";
-      $scope.students={};
+      $scope.student = ""; //student variable
+      $scope.class="";     // class variable
+      $scope.students={};  // Students variable is similar to an array i think.
 
+      //This function class pushes and stores it in database using firebase push method
       $scope.saveClasses = function(){
         $scope.myData.push({student: $scope.student,
                             class: $scope.class});
-        $scope.student = "";
-        $scope.class="";
       };
+      //firebase method 'on' takes two values(EventType and callback)
+      //snapshot is all the data passed down from the database.
+      //More info on this
+      // https://www.firebase.com/docs/web/api/
       $scope.myData.on('value', function(snapshot){
         $scope.students = snapshot.val();
-        $scope.$apply();
+//        $scope.$apply(); Another way to refresh but not the best way
+
+        //More optimal way to auto refresh the page
+        $timeout(function(){
+          $scope.students = snapshot.val();
+        });
       });
 
     };
