@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="" lang="en" ng-controller="studentCtrl">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+  <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+</head>
+<body style="margin:20px" >
+ <div>
+   <label>Student</label>
+   <input type="text" id="student" ng-model="student"><br />
+   <label>Class</label>
+   <input type="text" id="class" ng-model="class"><br />
+ </div>
+
+  <div><button class="btn btn-default" ng-click="saveClasses()">Save <span class="glyphicon glyphicon-ok"></span></button></div>
+
+ <div>
+   <table class="table table-bordered">
+     <thead>
+
+       <th>Student Name</th>
+       <th>Classes</th>
+     </thead>
+     <tbody ng-repeat="studentInfo in students">
+       <tr>
+         <td>{{studentInfo.student}}</td>
+         <td>{{studentInfo.class}}</td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+
+  <script>
+    function studentCtrl($scope){
+      $scope.myData = new Firebase("https://calpolycs.firebaseio.com/Students");
+      $scope.student = "";
+      $scope.class="";
+      $scope.students={};
+
+      $scope.saveClasses = function(){
+        $scope.myData.push({student: $scope.student,
+                            class: $scope.class});
+        $scope.student = "";
+        $scope.class="";
+      };
+      $scope.myData.on('value', function(snapshot){
+        $scope.students = snapshot.val();
+      });
+
+    };
+
+  </script>
+
+</body>
+</html>
+
+
+
