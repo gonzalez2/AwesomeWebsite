@@ -12,10 +12,12 @@ Our goal is to create a website where CS majors can
 Open sources used so far:
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [Jssor Slider] - Banner slider running with Bootstrap
+* [Jaunt API] - Java Web Scraping & JSON Querying
 * [malsup] - Picture slider
 
 [//]: #  
    [malsup]:<http://jquery.malsup.com/cycle2/>
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
    [Jssor Slider]: <http://jssor.com/>
+   [Jaunt API]: <http://jaunt-api.com/>
    [jQuery]: <http://jquery.com>
