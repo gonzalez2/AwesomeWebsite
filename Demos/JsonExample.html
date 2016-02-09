@@ -1,0 +1,30 @@
+<html ng-app="classApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Json Example</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script>
+      var classApp = angular.module('classApp', []);
+      classApp.controller('ClassCtrl', function($scope,$http){
+        $http.get('class.json').success(function(data){
+          $scope.classes = data;
+        });
+      });
+    </script>
+  </head>
+  <body ng-controller = "ClassCtrl">
+    Search: <input ng-model="query" type="text">
+    <table>
+      <tr>
+        <th><a href="" ng-click="sortFiled = classes">Class</a></th>
+        <th><a href="" ng-click="sortFiled = section">Section</a></th>
+        <th><a href="" ng-click="sortFiled = time">Time</a></th>
+      </tr>
+      <tr ng-repeat="class in classes | filter:query | orderBy:sortField">
+        <td>{{class.classes}}</td>
+        <td>{{class.section}}</td>
+        <td>{{class.time}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
